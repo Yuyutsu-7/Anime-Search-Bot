@@ -9,7 +9,7 @@ loop = asyncio.get_event_loop()
 
 async def init():
     # Generate random parameter for the deep link
-    parameter = str(requests.get('https://api.vhtear.com/randomstring?length=10&apikey=YOUR_API_KEY').json()['result'])
+    parameter = str(requests.get('https://api.vhtear.com/randomstring?length=10&apikey=NOT-PREMIUM').json()['result'])
 
     # Shorten the deep link using your URL shortener API
     deep_link = "https://telegram.dog/Anime_Search_Bot_bot?start=nada1000000046_" + parameter
