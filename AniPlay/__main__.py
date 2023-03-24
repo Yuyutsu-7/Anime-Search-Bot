@@ -12,8 +12,8 @@ async def init():
     parameter = str(requests.get('https://api.vhtear.com/randomstring?length=10&apikey=YOUR_API_KEY').json()['result'])
 
     # Shorten the deep link using your URL shortener API
-    deep_link = "https://telegram.dog/tpe_v2_bot?start=nada1000000046_" + parameter
-    response = requests.get("YOUR_URL_SHORTENER_API" + deep_link)
+    deep_link = "https://telegram.dog/Anime_Search_Bot_bot?start=nada1000000046_" + parameter
+    response = requests.get("rZDls1cnC5SKRQzb7G9kQS8BqOZ2" + deep_link)
 
     # Get the shortened URL from the response
     shortened_link = response.text.strip()
